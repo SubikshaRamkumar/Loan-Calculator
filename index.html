@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loan_calc">
+      <div class="top">
+        <h2>Loan Calculator</h2>
+        <form action="">
+          <div class="group">
+            <div class="title">Amount</div>
+            <input type="text" value="20000" class="loan_amount" />
+          </div>
+          <div class="group">
+            <div class="title">Interest Rate</div>
+            <input type="text" value="7.5" class="interest_rate" />
+          </div>
+          <div class="group">
+            <div class="title">Tenure(in month)</div>
+            <input type="text" value="120" class="tenure_month" />
+          </div>
+        </form>
+      </div>
+      <div class="result">
+        <div class="left">
+            <div class="loan_emi">
+                <h3>Loan EMI</h3>
+                <div class="value">123</div>
+            </div>
+            <div class="total_int">
+                <h3>Total Interest Payable</h3>
+                <div class="value">123</div>
+            </div>
+            <div class="total_amt">
+                <h3>Total Amount</h3>
+                <div class="value">5000</div>
+            </div>
+            <button class="calc_button">Calculate</button>
+        </div>
+        <div class="right">
+            <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

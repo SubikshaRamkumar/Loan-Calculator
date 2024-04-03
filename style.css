@@ -1,0 +1,114 @@
+body{
+    background-color: #14213d75;
+}
+.loan_calc
+{
+    font-family: "Roboto",sans-serif;
+    margin: 100px auto;
+    width: 600px;
+    background-color: white;
+    box-shadow: 0 12px 50px -11px rgba(255, 255, 255, 0.329);
+    border-radius: 8px;
+    color: #14213d;
+    overflow: hidden;
+}
+.loan_calc,
+.loan_calc *
+{
+    box-sizing: border-box;
+}
+
+.loan_calc .top
+{
+    background-color: #14213d;
+    color: white;
+    padding: 32px;
+}
+.loan_calc .top h2{
+    margin-top: 0;
+}
+.loan_calc form
+{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+.loan_calc title{
+    margin-bottom: 16px;
+}
+.loan_calc form input
+{
+    font-size: 20px;
+    padding: 8px 24px;
+    width: 100%;
+    color: black;
+}
+
+.loan_calc .result
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loan_calc .result .left
+{
+    width: 100%;
+    padding: 8px 32px;
+}
+.loan_calc .left h3{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.loan_calc .result .value
+{
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(20,33,61,0.24);
+}
+
+.loan_calc .result .value::before{
+    content: "$";
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 6px;
+    opacity: 0.4;
+}
+.loan_calc .calc_button
+{
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 8px ;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 24px 0;
+}
+.loan_calc .right
+{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+@media(max-width:650px)
+{
+    .loan_calc{
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .loan_calc form
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .loan_calc .result
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+}
